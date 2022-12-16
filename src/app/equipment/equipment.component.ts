@@ -21,7 +21,7 @@ export class EquipmentComponent implements OnInit {
    cargoMass: number = 0;
    maximumAllowedMass: number = 2000;
    maxItems: number = 10;
-   nearMaxMass: boolean = this.maximumAllowedMass - this.cargoMass > 200;
+   nearMaxMass: boolean = this.maximumAllowedMass - this.cargoMass <= 200;
 
    constructor() { }
 
